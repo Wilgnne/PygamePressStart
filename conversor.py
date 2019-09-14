@@ -1,5 +1,6 @@
 def HorasParaAngulo (hora:int):
-    t = hora / 24
+    t = (hora / 12)
+    t -= int(t)
     return (360 * t) - 90
 
 def MinutosParaAngulo (minutos:int):
